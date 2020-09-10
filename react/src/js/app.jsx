@@ -1,4 +1,5 @@
 /* eslint-disable */
+import { DOMRegistry } from 'react-dom-components';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ConsonantPage from "./components/Page/ConsonantPage";
@@ -12,6 +13,4 @@ class WrapperCardCollectionComponent {
 }
 
 window.WrapperCardCollectionComponent = WrapperCardCollectionComponent;
-
-
 
