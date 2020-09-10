@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import 'whatwg-fetch';
@@ -108,7 +107,7 @@ export default class ConsonantPage extends React.Component {
                 card.description = truncateString(card.description, TRUNCATE_TEXT_QTY);
                 card.initialText = card.description;
                 card.isBookmarked = false;
-                return card
+                return card;
             };
 
             let { featuredCards } = this.props.config || [];
@@ -214,7 +213,7 @@ export default class ConsonantPage extends React.Component {
                     typeof this.props.config[object][key] !== 'number'
                 )
             )
-        ) { return defaultProps[object][key] }
+        ) { return defaultProps[object][key]; }
         return this.props.config[object][key];
     }
 
@@ -655,7 +654,7 @@ export default class ConsonantPage extends React.Component {
                                     searchPlaceholder={this.getConfig('search', 'placeholderText')}
                                     onSearch={this.handleSearchInputChange} />
                             }
-                        </span> 
+                        </span>
                         <span>
                             <FiltersInfo
                                 enabled={this.getConfig('filterPanel', 'enabled')}
